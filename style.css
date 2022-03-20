@@ -1,0 +1,24 @@
+body{
+    background-color: #EEE;
+}
+h1{
+    color: #aaa;
+    border-bottom: 1px solid;
+}
+ul {
+    list-style-type: none;
+    border-right: 1px solid;
+    width: 7em;
+}
+ul ul {
+    display: none;
+    position: absolute;
+    
+}
+li:hover > ul {
+    display: block;
+    position: relative;
+    top: 0;
+    left : 80px;
+    border-right: none;
+}
