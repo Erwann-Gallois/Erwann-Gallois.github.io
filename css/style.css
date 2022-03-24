@@ -1,0 +1,45 @@
+body{
+    background-color: #EEE;
+}
+h1{
+    color: #aaa;
+    border-bottom: 1px solid;
+}
+.menu{
+    width: 5em;
+}
+ul.sous-menu{
+    display:none;
+    position: absolute;
+    left : 6em;
+}
+ul.sous-menu ul.sous-sous-menu{
+    display: none;
+    position: absolute;
+    left : 6em;
+}
+ul.sous-menu:first-of-type{
+    top:-1em;
+}
+ul.sous-menu:nth-child(2){
+    top:0em;
+}
+ul.sous-sous-menu:first-of-type{
+    top:-1em;
+}
+ul.sous-sous-menu:nth-child(2){
+    top:0em;
+}
+li{
+    list-style:none;
+    position: relative;
+    width : 8em;
+    padding : 0.5em 0.5em 0.5em 0.5em;
+
+}
+li:hover .sous-menu{
+    display: block;
+}
+ul.sous-menu:hover ul.sous-sous-menu{
+    display: block;
+}
